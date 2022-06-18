@@ -220,4 +220,6 @@ const std::map<RGB_BLEND_MODE, CRGB &(*)(CRGB &, const CRGB &, uint8_t)> blend_m
     // {LUMINOSITY, blend_luminosity}
 };
 
+typedef CRGB& (*blend_mode_fn_ptr)(CRGB &, const CRGB &, uint8_t);
+
 #endif
